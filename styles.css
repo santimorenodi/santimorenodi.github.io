@@ -147,6 +147,7 @@ ul, ol { list-style: none; }
 .subhead { margin: 3rem 0 1rem; font-size: 1.3rem; font-weight: 700; }
 .edu { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem; }
 .edu__item { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.3rem; }
+.edu__logo { display: block; height: 56px; width: auto; max-width: 160px; object-fit: contain; object-position: left center; margin-bottom: 1rem; }
 .edu__item p.mono { font-family: var(--font); font-size: .88rem; font-weight: 600; color: var(--muted); }
 .edu__item h4 { margin: .3rem 0 .2rem; font-size: 1.05rem; }
 .edu__item p:last-child { color: var(--muted); }
