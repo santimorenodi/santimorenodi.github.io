@@ -309,9 +309,10 @@ ul, ol { list-style: none; }
 .callout__label { font-size: .82rem; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--accent); margin-bottom: .3rem; }
 .agents { margin-top: 1rem; padding: .8rem 1rem; background: #fbf8f1; border: 1px solid var(--line); border-radius: 8px; font-size: .92rem; }
 .agents strong { display: block; font-size: .78rem; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--accent); margin-bottom: .2rem; }
-.bits__agent { display: block; margin-top: .6rem; padding-top: .6rem; border-top: 1px dashed var(--line); color: var(--muted); font-size: .85rem; line-height: 1.5; }
 .bits__agent::before { content: "With coding agents: "; font-weight: 600; color: var(--accent); }
-.bits { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; }
-.bits li { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem 1.1rem; }
-.bits strong { display: block; font-size: 1rem; margin-bottom: .3rem; }
-.bits span { color: var(--muted); font-size: .9rem; line-height: 1.5; }
+.bits { list-style: none; border-top: 1px solid var(--line); }
+.bits li { display: grid; grid-template-columns: 220px 1fr; column-gap: 2rem; padding: 1.2rem 0; border-bottom: 1px solid var(--line); }
+.bits strong { grid-row: span 2; font-size: 1.05rem; }
+.bits span { color: var(--ink); line-height: 1.55; }
+.bits__agent { margin-top: .45rem; color: var(--muted); font-size: .9rem; line-height: 1.5; }
+@media (max-width: 760px) { .bits li { grid-template-columns: 1fr; } .bits strong { grid-row: auto; margin-bottom: .3rem; } }
