@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moonlighter 2 — Santiago Moreno</title>
+  <meta name="description" content="Santiago Moreno's work as Technical Artist on Moonlighter 2: The Endless Vault.">
+  <meta property="og:title" content="Moonlighter 2 — Santiago Moreno">
+  <meta property="og:image" content="assets/img/moonlighter2-featured.jpg">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23FFD23F'/><text x='50' y='68' font-size='52' font-family='Arial Black,sans-serif' text-anchor='middle' fill='%23111'>SM</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=16">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="logo-unity" viewBox="0 0 24 24"><path d="m12.9288 4.2939 3.7997 2.1929c.1366.077.1415.2905 0 .3675l-4.515 2.6076a.4192.4192 0 0 1-.4246 0L7.274 6.8543c-.139-.0745-.1415-.293 0-.3675l3.7972-2.193V0L1.3758 5.5977V16.793l3.7177-2.1456v-4.3858c-.0025-.1565.1813-.2682.318-.1838l4.5148 2.6076a.4252.4252 0 0 1 .2136.3676v5.2127c.0025.1565-.1813.2682-.3179.1838l-3.7996-2.1929-3.7178 2.1457L12 24l9.6954-5.5977-3.7178-2.1457-3.7996 2.1929c-.1341.082-.3229-.0248-.3179-.1838V13.053c0-.1565.087-.2956.2136-.3676l4.5149-2.6076c.134-.082.3228.0224.3179.1838v4.3858l3.7177 2.1456V5.5977L12.9288 0Z"/></symbol><symbol id="logo-unreal" viewBox="4.39 4.54 15 15"><path d="M19.13 13.729c-.206.997-1.126 3.557-4.06 4.942l-1.179-1.325-1.988 2a7.338 7.338 0 01-5.804-2.978 2.859 2.859 0 00.65.123c.326.006.678-.114.678-.66v-5.394a.89.89 0 00-1.116-.89c-.92.212-1.656 2.509-1.656 2.509a7.304 7.304 0 012.528-5.597 7.408 7.408 0 013.73-1.721c-1.006.573-1.57 1.507-1.57 2.29 0 1.262.76 1.109.984.923v7.28a1.157 1.157 0 00.148.256 1.075 1.075 0 00.88.445c.76 0 1.747-.868 1.747-.868V9.172c0-.6-.452-1.324-.905-1.572 0 0 .838-.149 1.484.346a5.537 5.537 0 01.387-.425c1.508-1.48 2.929-1.902 4.112-2.112 0 0-2.151 1.69-2.151 3.96 0 1.687.043 5.801.043 5.801.799.771 1.986-.342 3.059-1.441Z"/></symbol></svg>
+  <main class="project">
+    <div class="container">
+      <a class="back" href="index.html#games">← Back to portfolio</a>
+    </div>
+
+    <div class="project__banner container">
+      <picture><source media="(max-width: 760px)" srcset="assets/img/moonlighter2-mobile.jpg"><img src="assets/img/moonlighter2-featured.jpg" alt="Moonlighter 2: The Endless Vault"></picture>
+    </div>
+
+    <section class="container project__head">
+      <p class="hero__eyebrow">Technical Artist · Digital Sun Games</p>
+      <h1 class="project__title">Moonlighter 2: The Endless Vault</h1>
+      <p class="hero__lead">Technical artist on the sequel to <em>Moonlighter</em>, from pre-production to release. I worked on shaders and shading, procedural content generation, optimization and porting, bridging art and code.</p>
+      <dl class="facts">
+        <div><dt>Role</dt><dd>Technical Artist</dd></div>
+        <div><dt>Studio</dt><dd>Digital Sun Games</dd></div>
+        <div><dt>Engine</dt><dd><svg class="logo" aria-hidden="true"><use href="#logo-unity"/></svg>Unity</dd></div>
+        <div><dt>Platforms</dt><dd>PC &amp; consoles</dd></div>
+      </dl>
+      <div class="hero__cta">
+        <a class="btn" href="https://store.steampowered.com/app/2350790/" target="_blank" rel="noopener">View on Steam</a>
+        <a class="btn btn--ghost" href="index.html#contact">Let's talk about it</a>
+      </div>
+    </section>
+
+    <section class="container project__body">
+      <h2>What I worked on</h2>
+      <!-- TODO: one block per contribution. Duplicate .contrib and fill it in. -->
+      <div class="contribs">
+        <article class="contrib">
+          <h3>Blob sea</h3>
+          <p>Artists author the blob with regular Shuriken particle systems. An editor baker turns them into data that a compute shader re-simulates on the GPU. Each camera culls the particles, and a second compute pass ray-marches them as smooth-min metaball SDFs into a low-res ray-length buffer that the composite upscales and shades.</p>
+          <div class="shots shots--feature">
+          <figure class="shot shot--main">
+            <img src="assets/img/m2-blob-final.jpg" alt="Blob sea around the Interdimensional Dock, final frame from the game camera" loading="lazy">
+            <figcaption>Final frame</figcaption>
+          </figure>
+          <div class="shots">
+            <figure class="shot">
+              <img src="assets/img/m2-blob-particles.jpg" alt="Debug view: particle spheres fed to the ray marcher" loading="lazy">
+              <figcaption>SDF spheres after camera culling</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="assets/img/m2-blob-raylength.jpg" alt="Debug view: low-resolution ray-length buffer in false colour" loading="lazy">
+              <figcaption>Low-res ray-length buffer (1440×810)</figcaption>
+            </figure>
+          </div>
+          </div>
+        </article>
+        <article class="contrib">
+          <h3>BotinGeneric: the toon look</h3>
+          <p>The main lit shader behind the game&#39;s look, with sibling variants for characters, cloth, rocks and grass. Lighting goes through hand-authored light ramps per asset family instead of a Lambert falloff, and lit and shadowed areas get their own colours: post-process Volumes drive a global tint and a shadow-light colour, so each zone, time of day or boss phase restyles the whole scene without touching a single material. Stepped specular and rim, a world-space height gradient and per-instance colour variation complete the look.</p>
+          <div class="shots shots--grid2">
+            <figure class="shot">
+              <img src="assets/img/m2-toon-day.jpg?v=4" alt="Will by the Tresna well, day" loading="lazy">
+              <figcaption>Day volume</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="assets/img/m2-toon-night.jpg?v=4" alt="Same shot by night" loading="lazy">
+              <figcaption>Night volume, same materials</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="assets/img/m2-toon-lit-day.jpg?v=4" alt="Lighting only by day: warm light, cool shadows" loading="lazy">
+              <figcaption>Lighting only: light vs shadow colour (day)</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="assets/img/m2-toon-lit-night.jpg?v=4" alt="Lighting only by night" loading="lazy">
+              <figcaption>Lighting only (night)</figcaption>
+            </figure>
+          </div>
+        </article>
+        <article class="contrib">
+          <h3>Integration Tool</h3>
+          <p>An editor workspace where VFX and audio artists build effects on top of character animations, in context: real rigs and weapons, and dungeon rooms generated around the preview. Everything lives on a Timeline (animation, VFX prefabs, camera shakes, flashes and FMOD events). A right-click <em>Export VFX</em> bakes the selected tracks into a <code>VFXData</code> asset of timed, Addressable entries, and at runtime a pooled <code>VFXController</code> plays it back with audio, flashes and shakes in sync.</p>
+          <figure class="shot">
+            <img src="assets/img/m2-integration-editor.jpg?v=2" alt="Integration Tool in the Unity editor: generated Houtu room with MoleTaalik GlassSpike, its Timeline and the tool inspector" loading="lazy">
+            <figcaption>The whole workspace: generated Houtu room, MoleTaalik@GlassSpike on its Timeline, and the tool inspector</figcaption>
+          </figure>
+          <ol class="flow">
+            <li><strong>Timeline</strong><span>Author VFX &amp; audio on the animation</span></li>
+            <li><strong>Export VFX</strong><span>Bake selected tracks</span></li>
+            <li><strong>VFXData</strong><span>Timed Addressable entries</span></li>
+            <li><strong>VFXController</strong><span>Pooled runtime playback</span></li>
+          </ol>
+        </article>
+      </div>
+
+      <h2 class="bits__title">More bits</h2>
+      <ul class="bits">
+        <li><strong>Pivot Painter wind</strong><span>Unreal&#39;s Pivot Painter 2 workflow ported to our URP vegetation shaders: hierarchical branch and leaf motion baked into textures, no bones.</span></li>
+        <li><strong>Vegetation instancing</strong><span>Custom instanced drawer for grass and props with Poisson-disk placement, Burst jobs, tight bounds and a cached bake for fast editor iteration.</span></li>
+        <li><strong>WFC dungeons</strong><span>Wave Function Collapse tile sets and art translators that turn the generated layout into dressed rooms per biome.</span></li>
+        <li><strong>Chrome Trace</strong><span>Chrome tracing of dungeon generation to find and fix the slowest steps of every run.</span></li>
+        <li><strong>Aeolia clouds</strong><span>Ray-marched volumetric clouds below Aeolia&#39;s islands: 3D simplex and Worley noise baked by a compute shader, Beer&#39;s law absorption, two-lobe Henyey-Greenstein scattering and iridescent lightning flashing inside them.</span></li>
+        <li><strong>Room transitions</strong><span>Portal transitions between dungeon rooms: camera moves, VFX, audio cues, and light and Volume data blending into the next room.</span></li>
+        <li><strong>Console &amp; handheld</strong><span>Performance, memory and loading work for Switch 2 and Steam Deck.</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container muted">© <span id="year"></span> Santiago Moreno Díaz</div>
+  </footer>
+
+  <script src="bg.js?v=2"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

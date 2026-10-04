@@ -1,13 +1,228 @@
----
-layout: default
-title: {{ site.name }}
----
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Santiago Moreno — Technical Artist</title>
+  <meta name="description" content="Santiago Moreno Díaz, Technical Artist at Digital Sun Games. Graphics, tools and animation in Unity, Unreal Engine and C++.">
+  <meta property="og:title" content="Santiago Moreno — Technical Artist">
+  <meta property="og:description" content="Technical Artist at Digital Sun Games. Graphics, tools and animation in Unity, Unreal Engine and C++.">
+  <meta property="og:image" content="assets/img/moonlighter2.jpg">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23FFD23F'/><text x='50' y='68' font-size='52' font-family='Arial Black,sans-serif' text-anchor='middle' fill='%23111'>SM</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=16">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="logo-unity" viewBox="0 0 24 24"><path d="m12.9288 4.2939 3.7997 2.1929c.1366.077.1415.2905 0 .3675l-4.515 2.6076a.4192.4192 0 0 1-.4246 0L7.274 6.8543c-.139-.0745-.1415-.293 0-.3675l3.7972-2.193V0L1.3758 5.5977V16.793l3.7177-2.1456v-4.3858c-.0025-.1565.1813-.2682.318-.1838l4.5148 2.6076a.4252.4252 0 0 1 .2136.3676v5.2127c.0025.1565-.1813.2682-.3179.1838l-3.7996-2.1929-3.7178 2.1457L12 24l9.6954-5.5977-3.7178-2.1457-3.7996 2.1929c-.1341.082-.3229-.0248-.3179-.1838V13.053c0-.1565.087-.2956.2136-.3676l4.5149-2.6076c.134-.082.3228.0224.3179.1838v4.3858l3.7177 2.1456V5.5977L12.9288 0Z"/></symbol><symbol id="logo-unreal" viewBox="4.39 4.54 15 15"><path d="M19.13 13.729c-.206.997-1.126 3.557-4.06 4.942l-1.179-1.325-1.988 2a7.338 7.338 0 01-5.804-2.978 2.859 2.859 0 00.65.123c.326.006.678-.114.678-.66v-5.394a.89.89 0 00-1.116-.89c-.92.212-1.656 2.509-1.656 2.509a7.304 7.304 0 012.528-5.597 7.408 7.408 0 013.73-1.721c-1.006.573-1.57 1.507-1.57 2.29 0 1.262.76 1.109.984.923v7.28a1.157 1.157 0 00.148.256 1.075 1.075 0 00.88.445c.76 0 1.747-.868 1.747-.868V9.172c0-.6-.452-1.324-.905-1.572 0 0 .838-.149 1.484.346a5.537 5.537 0 01.387-.425c1.508-1.48 2.929-1.902 4.112-2.112 0 0-2.151 1.69-2.151 3.96 0 1.687.043 5.801.043 5.801.799.771 1.986-.342 3.059-1.441Z"/></symbol></svg>
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero container">
+      <p class="hero__eyebrow">Technical Artist · Valencia, Spain</p>
+      <h1 class="hero__title">Santiago Moreno</h1>
+      <p class="hero__lead">
+        <strong>Senior Technical Artist</strong> at Digital Sun Games, where I&#39;ve worked on <strong><em>Moonlighter</em></strong>, <strong><em>Moonlighter 2</em></strong> and <strong><em>Cataclismo</em></strong>.
+        Before that I did engine work for <strong><em>Fable</em></strong> at d3t (Keywords Studios).
+        I like technical work with room for creativity: graphics, tools and animation.
+      </p>
+      <p class="hero__lead hero__lead--ai">
+        Lately I&#39;ve been working with AI coding agents like Claude Code and Codex, and teaching artists to use them in Unreal (through MCP) and Unity (through the CLI).
+      </p>
+      <div class="hero__cta">
+        <a href="#games" class="btn">See my work</a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      </div>
+      <ul class="hero__stats">
+        <li>
+          <strong><svg class="logo" aria-hidden="true"><use href="#logo-unity"/></svg>Unity</strong><span>Technical Artist · shipped games</span>
+          <ul class="tags"><li>C#</li><li>HLSL</li><li>VFX</li><li>Tools</li></ul>
+        </li>
+        <li>
+          <strong><svg class="logo" aria-hidden="true"><use href="#logo-unreal"/></svg>Unreal Engine</strong><span>Technical Artist · recent work</span>
+          <ul class="tags"><li>C++</li><li>Niagara</li><li>PCG</li><li>Materials</li><li>Tools</li></ul>
+        </li>
+      </ul>
+    </section>
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+    <!-- SHIPPED GAMES -->
+    <section id="games" class="section container">
+      <div class="section__head">
+        <div>
+          <h2>Professional work</h2>
+          <p class="muted section__sub">Games I&#39;ve worked on at Digital Sun Games and d3t.</p>
+        </div>
+      </div>
+      <div class="grid">
+        <article class="card card--featured">
+          <div class="card__media"><picture><source media="(max-width: 760px)" srcset="assets/img/moonlighter2-mobile.jpg"><img src="assets/img/moonlighter2-featured.jpg" alt="Moonlighter 2: The Endless Vault" loading="lazy"></picture></div>
+          <div class="card__body">
+            <p class="card__meta mono">Technical Artist · PC &amp; consoles</p>
+            <h3>Moonlighter 2: The Endless Vault</h3>
+            <p>Technical artist on the sequel to <em>Moonlighter</em>, from pre-production to release. I worked on shaders and shading, procedural content generation, optimization and porting, bridging art and code.</p>
+            <ul class="tags"><li><svg class="logo" aria-hidden="true"><use href="#logo-unity"/></svg>Unity</li><li>Shaders</li><li>PCG</li><li>Optimization</li><li>Porting</li></ul>
+            <div class="card__actions">
+              <a class="btn btn--small" href="moonlighter-2.html">More info</a>
+              <a class="card__link" href="https://store.steampowered.com/app/2350790/" target="_blank" rel="noopener">View on Steam →</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__media"><img src="assets/img/cataclismo.jpg" alt="Cataclismo" loading="lazy"></div>
+          <div class="card__body">
+            <p class="card__meta mono">Optimization support · PC</p>
+            <h3>Cataclismo</h3>
+            <p>Helped optimize the studio's real-time strategy and castle-building game.</p>
+            <ul class="tags"><li><svg class="logo" aria-hidden="true"><use href="#logo-unity"/></svg>Unity</li><li>Optimization</li><li>Profiling</li></ul>
+            <a class="card__link" href="https://store.steampowered.com/app/1422440/" target="_blank" rel="noopener">View on Steam →</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__media"><img src="assets/img/moonlighter.jpg" alt="Moonlighter" loading="lazy"></div>
+          <div class="card__body">
+            <p class="card__meta mono">Programmer · iOS &amp; Android</p>
+            <h3>Moonlighter Mobile</h3>
+            <p>Programmer on the mobile version of <em>Moonlighter</em>, bringing the action RPG and shopkeeping game to phones.</p>
+            <ul class="tags"><li><svg class="logo" aria-hidden="true"><use href="#logo-unity"/></svg>Unity</li><li>C#</li><li>Mobile</li><li>Porting</li></ul>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__media"><img src="assets/img/fable.jpg" alt="Fable" loading="lazy"></div>
+          <div class="card__body">
+            <p class="card__meta mono">Engine Programmer · d3t × Playground Games</p>
+            <h3>Fable</h3>
+            <p>Engine work for Playground Games&#39; new <em>Fable</em>: engine features and animation tools.</p>
+            <ul class="tags"><li>C++</li><li>Engine</li><li>Tools</li></ul>
+            <a class="card__link" href="https://store.steampowered.com/app/2769570/Fable/" target="_blank" rel="noopener">View on Steam →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section container">
+      <div class="section__head">
+        <h2>Experience</h2>
+      </div>
+      <ol class="timeline">
+        <li >
+          <p class="timeline__when mono">2021 — Present</p>
+          <div>
+            <h3>Senior Technical Artist · <a href="https://digitalsungames.com" target="_blank" rel="noopener">Digital Sun Games</a></h3>
+            <p class="muted">Valencia, Spain</p>
+            <p>Technical artist on <em>Moonlighter 2: The Endless Vault</em> and unannounced Unreal Engine projects. Also helped optimize <em>Cataclismo</em>.</p>
+          </div>
+        </li>
+        <li >
+          <p class="timeline__when mono">2020 — 2021</p>
+          <div>
+            <h3>Programmer · <a href="https://digitalsungames.com" target="_blank" rel="noopener">Digital Sun Games</a></h3>
+            <p class="muted">Valencia, Spain</p>
+            <p>Programmer on <em>Moonlighter</em> Mobile.</p>
+          </div>
+        </li>
+        <li >
+          <p class="timeline__when mono">Jul 2019 — Mar 2020</p>
+          <div>
+            <h3>Junior Core Tech Programmer · d3t (Keywords Studios)</h3>
+            <p class="muted">Runcorn, UK</p>
+            <p>Engine work for the new <a href="https://store.steampowered.com/app/2769570/Fable/" target="_blank" rel="noopener"><em>Fable</em></a>, alongside Playground Games. I added engine features and improved tools so artists could create assets faster.</p>
+          </div>
+        </li>
+        <li >
+          <p class="timeline__when mono">2019</p>
+          <div>
+            <h3>Junior Programmer · Bulkhead</h3>
+            <p class="muted">Creators of Battalion 1944, The Turing Test and Wardogs</p>
+            <p>Animation integration in Unreal Engine 4 and IK solvers for an upcoming title.</p>
+          </div>
+        </li>
+      </ol>
+
+      <h3 class="subhead">Education</h3>
+      <div class="edu">
+        <div class="edu__item">
+          <p class="mono muted">2018 — 2019</p>
+          <h4>BSc (Hons) Computer Science for Games: First Class</h4>
+          <p>Sheffield Hallam University</p>
+        </div>
+        <div class="edu__item">
+          <p class="mono muted">2015 — 2018</p>
+          <h4>BTEC HND Computing &amp; Systems Development: Distinction</h4>
+          <p>ESAT, Valencia</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- STUDENT PROJECTS -->
+    <section id="projects" class="section section--minor container">
+      <div class="section__head">
+        <h2>Student projects</h2>
+      </div>
+      <article class="card card--mosaic">
+        <a class="mosaic" href="student-projects.html" aria-label="See all student projects">
+          <img class="mosaic__big" src="assets/img/fuel-renegades.jpg" alt="Fuel Renegades" loading="lazy">
+          <img src="assets/img/mootengine.jpg" alt="MootEngine" loading="lazy">
+          <img src="assets/img/motion-matching.jpg" alt="Motion Matching plugin" loading="lazy">
+          <img src="assets/img/voxel-rpi.jpg" alt="Voxel terrain on Raspberry Pi" loading="lazy">
+          <img src="assets/img/game-projects.png" alt="Game jam projects" loading="lazy">
+        </a>
+        <div class="card__body">
+          <p class="card__meta mono">ESAT · Sheffield Hallam · 2015 – 2019</p>
+          <h3>Games, engines &amp; tools</h3>
+          <p>Six projects from my studies, including <em>Fuel Renegades</em> on Steam and my own C++/OpenGL engine.</p>
+          <div class="card__actions">
+            <a class="btn btn--small" href="student-projects.html">More info</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section container">
+      <div class="section__head">
+        <h2>Toolbox</h2>
+      </div>
+      <div class="skills">
+        <div class="skills__group">
+          <h3>Languages</h3>
+          <ul class="tags tags--big"><li>C#</li><li>C++</li><li>C</li><li>GLSL / HLSL</li><li>Python</li></ul>
+        </div>
+        <div class="skills__group">
+          <h3>Engines</h3>
+          <ul class="tags tags--big"><li><svg class="logo" aria-hidden="true"><use href="#logo-unity"/></svg>Unity</li><li><svg class="logo" aria-hidden="true"><use href="#logo-unreal"/></svg>Unreal Engine</li><li>Custom engines</li></ul>
+        </div>
+        <div class="skills__group">
+          <h3>DCC tools</h3>
+          <ul class="tags tags--big"><li>Blender add-ons</li><li>Python</li><li>Artist pipelines</li></ul>
+        </div>
+        <div class="skills__group">
+          <h3>Tools</h3>
+          <ul class="tags tags--big"><li>Visual Studio / Rider</li><li>Git</li><li>Perforce</li><li>Plastic SCM</li><li>RenderDoc</li><li>PIX</li></ul>
+        </div>
+      </div>
+      <p class="muted langs"><strong>Languages:</strong> Spanish (native) · English (professional)</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container contact">
+      <h2>Let's talk</h2>
+      <p>Want to talk about a project, a role, or just games? Send me a message.</p>
+      <a class="btn btn--big" href="mailto:santimorenodi@gmail.com" data-copy="santimorenodi@gmail.com">santimorenodi@gmail.com</a>
+      <ul class="social">
+        <li><a href="https://www.linkedin.com/in/santimorenodi/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://twitter.com/SantiTR_" target="_blank" rel="noopener">X / Twitter</a></li>
+        <li><a href="https://www.youtube.com/channel/UCu0G_3NxGPqG2GdKrRI8Kgg" target="_blank" rel="noopener">YouTube</a></li>
+        <li><a href="about.html">About me</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container mono muted">© <span id="year"></span> Santiago Moreno Díaz</div>
+  </footer>
+
+  <script src="bg.js?v=2"></script>
+  <script src="main.js?v=3"></script>
+</body>
+</html>
