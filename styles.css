@@ -161,6 +161,7 @@ ul, ol { list-style: none; }
 /* Contact */
 .contact { text-align: center; }
 .contact > p { color: var(--muted); max-width: 520px; margin: .8rem auto 1.8rem; font-size: 1.1rem; }
+.contact__actions { display: flex; justify-content: center; align-items: center; gap: .8rem; flex-wrap: wrap; }
 .social { display: flex; justify-content: center; gap: 1.6rem; margin-top: 2rem; flex-wrap: wrap; }
 .social a { text-decoration: none; font-weight: 500; color: var(--muted); }
 .social a:hover { color: var(--accent); }

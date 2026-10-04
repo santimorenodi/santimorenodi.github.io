@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Santiago Moreno Díaz — CV</title>
+  <meta name="robots" content="noindex">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    @page { size: A4; margin: 0; }
+    :root { --ink: #1a1a1a; --muted: #66625a; --line: #e6dfd0; --accent: #ff5a36; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { background: #fff; }
+    body { font-family: "Archivo", system-ui, sans-serif; color: var(--ink); font-size: 9.6pt; line-height: 1.42; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .page { width: 210mm; min-height: 297mm; padding: 15mm 16mm 13mm; margin: 0 auto; }
+    a { color: inherit; text-decoration: none; }
+    em { font-style: italic; }
+
+    header { display: flex; justify-content: space-between; align-items: flex-end; gap: 8mm; padding-bottom: 5mm; border-bottom: 2px solid var(--ink); }
+    .eyebrow { color: var(--accent); font-weight: 600; font-size: 9.5pt; margin-bottom: 1mm; }
+    h1 { font-family: "Archivo Black", "Arial Black", sans-serif; font-weight: 400; font-size: 30pt; line-height: 1; letter-spacing: -.01em; }
+    .contact { list-style: none; text-align: right; font-size: 9pt; line-height: 1.6; }
+    .contact li a { border-bottom: 1px solid var(--line); }
+
+    .summary { margin: 5mm 0 1mm; font-size: 10.2pt; line-height: 1.5; }
+    .summary strong { font-weight: 600; }
+
+    h2 { font-size: 8.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--accent); margin: 6mm 0 2.5mm; }
+
+    .job { display: grid; grid-template-columns: 30mm 1fr; gap: 4mm; padding: 2.4mm 0; border-top: 1px solid var(--line); }
+    .job:first-of-type { border-top: 0; padding-top: 0; }
+    .when { color: var(--muted); font-weight: 600; font-size: 8.8pt; padding-top: .4mm; }
+    h3 { font-size: 10.4pt; font-weight: 700; }
+    .where { color: var(--muted); font-size: 8.8pt; margin-bottom: .8mm; }
+    ul.points { padding-left: 4mm; }
+    ul.points li { margin: .4mm 0; }
+    ul.points li::marker { color: var(--accent); }
+
+    .edu { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+    .edu .when { padding: 0; }
+    .school { display: flex; align-items: center; gap: 2mm; color: var(--muted); }
+    .school img { height: 4.6mm; width: auto; }
+
+    .skills { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4mm; }
+    .skills h4 { font-size: 8.8pt; font-weight: 700; margin-bottom: 1mm; }
+    .skills p { color: var(--muted); font-size: 9pt; }
+
+    footer { margin-top: 6mm; padding-top: 3mm; border-top: 1px solid var(--line); color: var(--muted); font-size: 8.6pt; display: flex; justify-content: space-between; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div>
+        <p class="eyebrow">Senior Technical Artist · Valencia, Spain</p>
+        <h1>Santiago Moreno Díaz</h1>
+      </div>
+      <ul class="contact">
+        <li><a href="mailto:santimorenodi@gmail.com">santimorenodi@gmail.com</a></li>
+        <li><a href="https://santimorenodi.github.io">santimorenodi.github.io</a></li>
+        <li><a href="https://www.linkedin.com/in/santimorenodi/">linkedin.com/in/santimorenodi</a></li>
+      </ul>
+    </header>
+
+    <p class="summary">
+      <strong>Senior Technical Artist</strong> at Digital Sun Games, where I&#39;ve worked on <strong><em>Moonlighter</em></strong>, <strong><em>Moonlighter 2</em></strong> and <strong><em>Cataclismo</em></strong>.
+      Before that I did engine work for <strong><em>Fable</em></strong> at d3t (Keywords Studios).
+      I like technical work with room for creativity: graphics, tools and animation.
+      Lately I&#39;ve been working with AI coding agents like Claude Code and Codex, and teaching artists to use them in Unreal (through MCP) and Unity (through the CLI).
+    </p>
+
+    <h2>Experience</h2>
+    <div class="job">
+      <p class="when">2021 — Present</p>
+      <div>
+        <h3>Senior Technical Artist · Digital Sun Games</h3>
+        <p class="where">Valencia, Spain</p>
+        <ul class="points">
+          <li><em>Moonlighter 2: The Endless Vault</em> (Unity, PC &amp; consoles), from pre-production to release: shaders and shading, procedural content generation, optimization and porting, bridging art and code.</li>
+          <li>Unannounced Unreal Engine projects: C++, Niagara, PCG, materials and tools.</li>
+          <li>Optimization and profiling support on <em>Cataclismo</em>.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="job">
+      <p class="when">2020 — 2021</p>
+      <div>
+        <h3>Programmer · Digital Sun Games</h3>
+        <p class="where">Valencia, Spain</p>
+        <ul class="points">
+          <li><em>Moonlighter</em> Mobile (Unity, iOS &amp; Android): bringing the action RPG and shopkeeping game to phones.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="job">
+      <p class="when">Jul 2019 — Mar 2020</p>
+      <div>
+        <h3>Junior Core Tech Programmer · d3t (Keywords Studios)</h3>
+        <p class="where">Runcorn, UK</p>
+        <ul class="points">
+          <li>Engine work for the new <em>Fable</em>, alongside Playground Games. I added engine features and improved tools so artists could create assets faster.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="job">
+      <p class="when">2019</p>
+      <div>
+        <h3>Junior Programmer · Bulkhead</h3>
+        <p class="where">Creators of Battalion 1944, The Turing Test and Wardogs</p>
+        <ul class="points">
+          <li>Animation integration in Unreal Engine 4 and IK solvers for an upcoming title.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Education</h2>
+    <div class="edu">
+      <div>
+        <p class="when">2018 — 2019</p>
+        <h3>BSc (Hons) Computer Science for Games: First Class</h3>
+        <p class="school"><img src="../assets/logos/shu.svg" alt="">Sheffield Hallam University</p>
+      </div>
+      <div>
+        <p class="when">2015 — 2018</p>
+        <h3>BTEC HND Computing &amp; Systems Development: Distinction</h3>
+        <p class="school"><img src="../assets/logos/esat.png" alt="">ESAT, Valencia</p>
+      </div>
+    </div>
+
+    <h2>Toolbox</h2>
+    <div class="skills">
+      <div><h4>Languages</h4><p>C#, C++, C, GLSL / HLSL, Python</p></div>
+      <div><h4>Engines</h4><p>Unity, Unreal Engine, custom engines</p></div>
+      <div><h4>DCC tools</h4><p>Blender add-ons, Python, artist pipelines</p></div>
+      <div><h4>Tools</h4><p>Visual Studio / Rider, Git, Perforce, Plastic SCM, RenderDoc, PIX</p></div>
+    </div>
+
+    <footer>
+      <span><strong>Languages:</strong> Spanish (native) · English (professional)</span>
+      <span>Portfolio: santimorenodi.github.io</span>
+    </footer>
+  </div>
+</body>
+</html>
